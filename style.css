@@ -13,8 +13,9 @@ h1{
 }
 #result{
     width: 320px;
+    word-wrap: break-word;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    padding: 30px 8px;
+    padding: 20px 8px;
     font-weight: 900;
     text-align: right;
     font-size: 30px;
