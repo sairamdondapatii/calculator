@@ -11,29 +11,29 @@ for(let i=0; i<buttons.length; i++){
 }
 
 function updateresult(input){
-    let presentResult=result.innerText;
+    let presentResult=result.value;
     if(presentResult=='0'){
         if(input!='C' && input!='DEL' && input!='='){
-            result.innerText='';
-            result.innerText=input;
+            result.value='';
+            result.value=input;
         }
     }
     else{
         if(input=='DEL'){
             result.innerText=presentResult.substring(0,presentResult.length-1);
-            if(result.innerText==""){
-                result.innerText='0'
+            if(result.value==""){
+                result.value='0'
             }
         }
         if(input=='C'){
-            result.innerText='0';
+            result.value='0';
         }
         if(input!='C' && input!='DEL' && input!='='){
-            result.innerText+=input;
+            result.value+=input;
         }
         if(input=="="){
-            let display=result.innerText;
-            result.innerText=eval(display)
+            let display=result.value;
+            result.value=eval(display)
            
         }
     }

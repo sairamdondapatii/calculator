@@ -2,7 +2,8 @@ body{
     margin: 0;
 }
 h1{
-    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
 }
 .container{
     display: flex;
@@ -10,23 +11,24 @@ h1{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background: #3a4452;
 }
 #result{
     width: 320px;
-    word-wrap: break-word;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     padding: 20px 8px;
-    font-weight: 900;
-    text-align: right;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 25px;
     margin-bottom: 4px;
     margin-top: 5px;
-
+    border: none;
+    outline: none;
+    border-radius: 8px;
 }
 button{
     cursor: pointer;
     width: 75px;
-    height: 80px;
+    height: 50px;
     margin: 4px;
     font-size: 26px;
     font-weight: 400;
@@ -39,18 +41,11 @@ button{
     color: blue;
 }
 .digit:hover{
-    background-color: rgba(88, 88, 241, 0.307);
+    background-color: #cacaca;
 }
-.operator1{
-    background-color: rgba(253, 49, 49, 0.503);
-}
+
 #equal{
-    color: rgb(54, 235, 54);
-    background-color: rgba(38, 230, 38, 0.486);
+    background-color: rgb(54, 235, 54);
+   
 }
-.contact{
-    padding: 20px;
-}
-.contact>a{
-    text-decoration: none;
-}
+
