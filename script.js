@@ -20,7 +20,7 @@ function updateresult(input){
     }
     else{
         if(input=='DEL'){
-            result.innerText=presentResult.substring(0,presentResult.length-1);
+            result.value=presentResult.substring(0,presentResult.length-1);
             if(result.value==""){
                 result.value='0'
             }
